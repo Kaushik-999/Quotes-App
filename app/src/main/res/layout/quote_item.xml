@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/quote_item"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Quotes"
+        android:fontFamily="sans-serif"
+        android:textSize="24sp"
+        android:padding="7dp"
+        android:layout_margin="14dp"
+        android:textColor="#4C4C6D"
+        android:background="#E8F6EF"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <TextView
+        android:id="@+id/quote_author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="author"
+        android:padding="7dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:textSize="15sp"
+        android:textColor="#B8DFD8"
+        android:background="#E8F6EF"
+        app:layout_constraintTop_toBottomOf="@id/quote_item"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textAlignment="textEnd"
+        android:textStyle="bold"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
